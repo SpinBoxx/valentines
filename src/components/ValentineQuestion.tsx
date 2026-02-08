@@ -153,7 +153,7 @@ export default function ValentineQuestion() {
             </h2>
 
             {/* Buttons */}
-            <div className="relative flex justify-center items-center gap-6 w-full min-h-52">
+            <div className="relative flex justify-center items-center gap-6 w-full min-h-40">
               {/* Yes button */}
               <motion.button
                 onClick={() => {
