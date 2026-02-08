@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+:root {
+	--valentine-bg: #1a0a10;
+	--valentine-surface: #2d1120;
+}
+
+html, body, #root {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Borel', cursive;
+	background: radial-gradient(ellipse at 50% 0%, #3b0f2a 0%, var(--valentine-bg) 70%);
+	color: #fce4ec;
+	overflow-x: hidden;
+}
+
+/* Floating hearts background */
+@keyframes float-up {
+	0% {
+		transform: translateY(100vh) scale(0.5) rotate(0deg);
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	90% {
+		opacity: 0.3;
+	}
+	100% {
+		transform: translateY(-10vh) scale(1) rotate(45deg);
+		opacity: 0;
+	}
+}
+
+.floating-hearts::before,
+.floating-hearts::after {
+	content: '♥';
+	position: fixed;
+	font-size: 1.2rem;
+	color: rgba(251, 113, 133, 0.15);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.floating-hearts::before {
+	left: 15%;
+	animation: float-up 12s ease-in-out infinite;
+}
+
+.floating-hearts::after {
+	left: 75%;
+	animation: float-up 16s ease-in-out 4s infinite;
+}
+
+/* Selection color */
+::selection {
+	background: rgba(251, 113, 133, 0.35);
+	color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--valentine-bg);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(251, 113, 133, 0.3);
+	border-radius: 3px;
+}
