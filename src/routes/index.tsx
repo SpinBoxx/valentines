@@ -21,8 +21,8 @@ function Index() {
 			content: "Tu illumines mes journées et réchauffes mes nuits (tes gros pieds la) ✨",
 		},
 		{
-			title: "Mon abeile",
-			content: "Tu es le miel de ma ruche bz bz bz",
+			title: "Mon abeille",
+			content: "Tu es le miel de ma ruche bz bz bz 🐝🐝",
 		},
 		{
 			content: <ValentineQuestion />,
