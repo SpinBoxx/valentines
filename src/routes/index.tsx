@@ -10,7 +10,7 @@ function Index() {
 	const steps = [
 		{
 			title: "14 février 2026",
-			content: "Joyeuse Saint-Valentin ❤️",
+			content: "Joyeuse Saint-Valentin Clara ❤️",
 		},
 		{
 			title: "Pour toi",
@@ -18,7 +18,11 @@ function Index() {
 		},
 		{
 			title: "Mon cœur",
-			content: "Tu illumines mes journées et réchauffes mes nuits ✨",
+			content: "Tu illumines mes journées et réchauffes mes nuits (tes gros pieds la) ✨",
+		},
+		{
+			title: "Mon abeile",
+			content: "Tu es le miel de ma ruche bz bz bz",
 		},
 		{
 			content: <ValentineQuestion />,
